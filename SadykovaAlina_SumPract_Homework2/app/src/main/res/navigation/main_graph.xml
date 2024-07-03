@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.sadykovaalina_sumpract_homework2.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_castleFragment2"
+            app:destination="@id/castleFragment"
+            app:enterAnim="@android:anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/castleFragment"
+        android:name="com.example.sadykovaalina_sumpract_homework2.CastleFragment"
+        android:label="fragment_castle"
+        tools:layout="@layout/fragment_castle" >
+        <action
+            android:id="@+id/action_castleFragment_to_castlePageFragment"
+            app:destination="@id/castlePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/castlePageFragment"
+        android:name="com.example.sadykovaalina_sumpract_homework2.CastlePageFragment"
+        android:label="fragment_castle_page"
+        tools:layout="@layout/fragment_castle_page" >
+        <action
+            android:id="@+id/action_castlePageFragment_to_castleFragment"
+            app:destination="@id/castleFragment" />
+    </fragment>
+</navigation>

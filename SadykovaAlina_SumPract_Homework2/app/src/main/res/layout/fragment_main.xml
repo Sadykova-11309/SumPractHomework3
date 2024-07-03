@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/AppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_a_location"
+        android:textSize="20pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonCastle"
+        app:icon="@drawable/baseline_castle_24"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/castle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonChurch"
+        app:icon="@drawable/baseline_church_24"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/church"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCastle" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonTheatre"
+        app:icon="@drawable/baseline_theater_comedy_24"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/theater"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonChurch" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonRestaurant"
+        app:icon="@drawable/baseline_restaurant_24"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/restaurant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTheatre"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonAddLocation"
+        app:icon="@drawable/baseline_fmd_good_24"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/add_a_new_location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRestaurant" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

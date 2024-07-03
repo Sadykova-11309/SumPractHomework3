@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SadykovaAlina_SumPract_Homework2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="select_a_location">Select a location</string>
+    <string name="add_a_new_location">Add a new location</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="church">Church</string>
+    <string name="theater">Theater</string>
+    <string name="castle">Castle</string>
+    <string name="send">Send</string>
+    <string name="hint">Example: Cafeteria</string>
+    <string name="new_location">You added a new location:</string>
+    <string name="input_text">InputText</string>
+    <string name="back">Go Back</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
